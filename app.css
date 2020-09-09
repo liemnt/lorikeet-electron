@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: 'Helvetica','Arial','sans';
 }
+
 #toolbar {
     top: 0px;
     position: fixed;
@@ -10,6 +11,7 @@ body {
     width: 100%;
     z-index: 2;
 }
+
 #current-folder {
     float: left;
     color: white;
@@ -19,12 +21,14 @@ body {
     border-radius: 0.2em;
     margin: 1em;
 }
+
 #main-area {
     clear: both;
     margin: 2em;
     margin-top: 3em;
     z-index: 1;
 }
+
 .item {
     position: relative;
     float: left;
@@ -34,7 +38,23 @@ body {
     height: 6em;
     text-align: center;
 }
+
 .item .filename {
     padding-top: 1em;
     font-size: 10pt;
+}
+
+#search {
+    float: right;
+    padding: 0.5em;
+    min-width: 10em;
+    border-radius: 3em;
+    margin: 2em 1em;
+    border: none;
+    outline: none;
+}
+
+span.path:hover, img:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
